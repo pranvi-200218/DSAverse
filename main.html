@@ -568,7 +568,6 @@
 
             <div class="analogy-box">
                 💡 Analogy: An array is like lockers in a corridor — fixed count, fixed position.
-                <!-- <span class="hindi-text">(एक ऐरे गलियारे में लॉकर की तरह है — निश्चित संख्या, निश्चित स्थिति।)</span> -->
             </div>
 
             <div class="learnings-section">
@@ -655,7 +654,6 @@
 
             <div class="analogy-box">
                 💡 Analogy: A linked list is like a Scavenger Hunt where each clue points to the next location.
-                <!-- <span class="hindi-text">(एक लिंक्ड लिस्ट एक मेहतर शिकार (Scavenger Hunt) की तरह है जहां हर सुराग अगले स्थान की ओर इशारा करता है।)</span> -->
             </div>
 
             <div class="learnings-section">
@@ -742,7 +740,6 @@
 
             <div class="analogy-box">
                 💡 Analogy: A queue is like a printer spooling tasks—the first job sent is the first job printed.
-                <!-- <span class="hindi-text">(एक कतार प्रिंटर द्वारा कार्यों को स्पूल करने जैसा है—भेजा गया पहला काम पहला प्रिंटेड काम है。)</span>/ -->
             </div>
 
             <div class="learnings-section">
@@ -821,7 +818,6 @@
 
             <div class="analogy-box">
                 💡 Analogy: **Linear Search** is like looking for a name in an unordered contact list (O(n)). **Binary Search** is like using a phonebook (O(log n)).
-                <!-- <span class="hindi-text">(लीनियर सर्च एक अव्यवस्थित संपर्क सूची में नाम खोजने जैसा है (O(n))। बाइनरी सर्च एक फोनबुक का उपयोग करने जैसा है (O(log n))।)</span> -->
             </div>
 
             <div class="learnings-section">
@@ -900,65 +896,62 @@
             </p>
             <div class="analogy-box">
                 💡 Analogy: **O(n²)** sorting is like manually fixing every misplaced card in a deck (slow). **O(n log n)** is like dividing the deck, sorting each pile, and then merging (fast).
-                <!-- <span class="hindi-text">(O(n²) सॉर्टिंग एक डेक में हर गलत जगह पर रखे कार्ड को मैन्युअल रूप से ठीक करने जैसा है (धीमा)। O(n log n) डेक को विभाजित करने, प्रत्येक ढेर को सॉर्ट करने और फिर विलय करने जैसा है (तेज)।)</span> -->
-            </div>
-
-            <div class="learnings-section">
-                <h3>🧠 In-Depth Learnings (Theory)</h3>
-                <ul>
-                    <li>Quadratic Complexity: Simple sorts like **Bubble**, **Insertion**, and **Selection Sort** have an average time complexity of **O(n²)**. Best for very small arrays.</li>
-                    <li>Log-Linear Complexity: Efficient sorts like **Merge Sort** and **Quick Sort** have an average time complexity of **O(n log n)**. Best for large arrays.</li>
-                    <li>Space Complexity: Some algorithms (like Merge Sort) require **O(n)** auxiliary space, while others (like Bubble Sort or Quick Sort in-place) require **O(1)** or **O(log n)**.</li>
-                    <li>Stability: A sort is *stable* if it preserves the relative order of equal elements. This matters in databases.</li>
-                    <li>Adaptive Sorting: **Insertion Sort** is highly efficient when the array is already mostly sorted (it performs close to O(n)).</li>
-                </ul>
-            </div>
-
-            <div id="sort-interactivity" class="interactive-demo">
-                <h4 class="demo-title">🎮 Interactivity: Sorting Comparison Demo (Hover to visualize steps)</h4>
-                <div class="demo-message">
-                    Hover over the buttons below to see a single step of the sort's O(n²) inner loop.
+                <div class="learnings-section">
+                    <h3>🧠 In-Depth Learnings (Theory)</h3>
+                    <ul>
+                        <li>Quadratic Complexity: Simple sorts like **Bubble**, **Insertion**, and **Selection Sort** have an average time complexity of **O(n²)**. Best for very small arrays.</li>
+                        <li>Log-Linear Complexity: Efficient sorts like **Merge Sort** and **Quick Sort** have an average time complexity of **O(n log n)**. Best for large arrays.</li>
+                        <li>Space Complexity: Some algorithms (like Merge Sort) require **O(n)** auxiliary space, while others (like Bubble Sort or Quick Sort in-place) require **O(1)** or **O(log n)**.</li>
+                        <li>Stability: A sort is *stable* if it preserves the relative order of equal elements. This matters in databases.</li>
+                        <li>Adaptive Sorting: **Insertion Sort** is highly efficient when the array is already mostly sorted (it performs close to O(n)).</li>
+                    </ul>
                 </div>
-                <button class="interactive-btn bubble-sort-btn">Bubble Sort Step (Compare/Swap)</button>
-                <button class="interactive-btn insertion-sort-btn">Insertion Sort Step (Insertion)</button>
 
-                <div id="unsorted-array" class="data-array sort-array">
-                    <div class="array-bar h3" style="height: 60px;">3</div>
-                    <div class="array-bar h2" style="height: 40px;">2</div>
-                    <div class="array-bar h4" style="height: 80px;">4</div>
-                    <div class="array-bar h1" style="height: 20px;">1</div>
-                </div>
-            </div>
+                <div id="sort-interactivity" class="interactive-demo">
+                    <h4 class="demo-title">🎮 Interactivity: Sorting Comparison Demo (Hover to visualize steps)</h4>
+                    <div class="demo-message">
+                        Hover over the buttons below to see a single step of the sort's O(n²) inner loop.
+                    </div>
+                    <button class="interactive-btn bubble-sort-btn">Bubble Sort Step (Compare/Swap)</button>
+                    <button class="interactive-btn insertion-sort-btn">Insertion Sort Step (Insertion)</button>
 
-            <div class="quiz-section">
-                <h4 class="quiz-title">❓ Post-Chapter Quiz: Sorting (Self-Test Q&A)</h4>
-                <div id="quiz-5-container" class="quiz-container">
-                    <div class="question">
-                        <p>1. Which of the following is considered the slowest basic sorting algorithm in Big O notation?</p>
-                        <div class="correct-answer">Answer: Bubble Sort (O(n²))</div>
-                    </div>
-                    <div class="question">
-                        <p>2. What is the average time complexity of Merge Sort, which is often considered ideal for large lists?</p>
-                        <div class="correct-answer">Answer: O(n log n)</div>
-                    </div>
-                    <div class="question">
-                        <p>3. The term 'In-place' in sorting algorithms typically refers to:</p>
-                        <div class="correct-answer">Answer: Using O(1) auxiliary space (minimal extra memory).</div>
-                    </div>
-                    <div class="question">
-                        <p>4. Which sorting algorithm's best-case time complexity is O(n), when the array is already sorted?</p>
-                        <div class="correct-answer">Answer: Insertion Sort</div>
-                    </div>
-                    <div class="question">
-                        <p>5. Which sorting technique is an example of the Divide and Conquer paradigm?</p>
-                        <div class="correct-answer">Answer: Merge Sort</div>
-                    </div>
-                    <div class="question">
-                        <p>6. Quick Sort is generally preferred over Merge Sort for sorting arrays because:</p>
-                        <div class="correct-answer">Answer: Quick Sort is typically "In-place" (better memory usage).</div>
+                    <div id="unsorted-array" class="data-array sort-array">
+                        <div class="array-bar h3" style="height: 60px;">3</div>
+                        <div class="array-bar h2" style="height: 40px;">2</div>
+                        <div class="array-bar h4" style="height: 80px;">4</div>
+                        <div class="array-bar h1" style="height: 20px;">1</div>
                     </div>
                 </div>
-            </div>
+
+                <div class="quiz-section">
+                    <h4 class="quiz-title">❓ Post-Chapter Quiz: Sorting (Self-Test Q&A)</h4>
+                    <div id="quiz-5-container" class="quiz-container">
+                        <div class="question">
+                            <p>1. Which of the following is considered the slowest basic sorting algorithm in Big O notation?</p>
+                            <div class="correct-answer">Answer: Bubble Sort (O(n²))</div>
+                        </div>
+                        <div class="question">
+                            <p>2. What is the average time complexity of Merge Sort, which is often considered ideal for large lists?</p>
+                            <div class="correct-answer">Answer: O(n log n)</div>
+                        </div>
+                        <div class="question">
+                            <p>3. The term 'In-place' in sorting algorithms typically refers to:</p>
+                            <div class="correct-answer">Answer: Using O(1) auxiliary space (minimal extra memory).</div>
+                        </div>
+                        <div class="question">
+                            <p>4. Which sorting algorithm's best-case time complexity is O(n), when the array is already sorted?</p>
+                            <div class="correct-answer">Answer: Insertion Sort</div>
+                        </div>
+                        <div class="question">
+                            <p>5. Which sorting technique is an example of the Divide and Conquer paradigm?</p>
+                            <div class="correct-answer">Answer: Merge Sort</div>
+                        </div>
+                        <div class="question">
+                            <p>6. Quick Sort is generally preferred over Merge Sort for sorting arrays because:</p>
+                            <div class="correct-answer">Answer: Quick Sort is typically "In-place" (better memory usage).</div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
         <section id="chapter-7" class="dsa-chapter">
